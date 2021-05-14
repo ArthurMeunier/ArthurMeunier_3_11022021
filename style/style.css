@@ -1,0 +1,33 @@
+.main {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 480px;
+}
+
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 480px;
+  background-color: black;
+}
+
+.footer > ul {
+  padding : 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+
+img {
+  height: 50px;
+  width: 150px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
