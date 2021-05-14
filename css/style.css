@@ -1,0 +1,127 @@
+.body {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 480px;
+}
+
+.main {
+  font-family: "Roboto", sans-serif;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+header {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-family: "Shrikhand", "cursive";
+  font-weight: 200;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.place {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  color: #353535;
+  font-weight: 600;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.place .fa-map-marker-alt {
+  margin-right: 5%;
+}
+
+.explore {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.explore__p1 {
+  padding: 30px 48px 18px 48px;
+}
+.explore__p2 {
+  font-weight: 300;
+  padding: 0px 20px 24px 20px;
+}
+.explore__btn {
+  margin-bottom: 42px;
+  color: white;
+  width: 60%;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 0;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 18px;
+}
+
+.tuto {
+  display: flex;
+  flex-direction: column;
+}
+.tuto > h2 {
+  margin: 28px 0px 18px 12px;
+}
+.tuto__step {
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0px 24px 0px;
+  margin-bottom: 18px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  font-weight: 500;
+}
+.tuto__step > .fas {
+  color: #7e7e7e;
+}
+.tuto__step > .fas.fa-store {
+  color: #9356DC;
+}
+.tuto__number {
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  position: absolute;
+  left: 10px;
+}
+
+.footer {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 480px;
+  background-color: #353535;
+}
+.footer ul {
+  padding: 0;
+}
+.footer__logo {
+  font-family: "Shrikhand", "cursive";
+  font-weight: 100;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 50px;
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
