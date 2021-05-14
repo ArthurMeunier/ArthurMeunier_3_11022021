@@ -1,6 +1,7 @@
-.body {
+body {
   padding-left: 0px;
   padding-right: 0px;
+  margin: 0;
   max-width: 480px;
 }
 
@@ -13,7 +14,7 @@ p, h1, h2, h3 {
 }
 
 header {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 h1 {
@@ -64,6 +65,7 @@ h1 {
 .tuto {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 .tuto > h2 {
   margin: 28px 0px 18px 12px;
@@ -77,6 +79,7 @@ h1 {
   border-radius: 25px;
   background-color: #f6f6f6;
   font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .tuto__step > .fas {
   color: #7e7e7e;
@@ -96,17 +99,55 @@ h1 {
   height: 18px;
   border: 0;
   position: absolute;
-  left: 10px;
+  left: 2px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-bottom: 36px;
+}
+.restaurants > h2 {
+  margin: 28px 0px 18px 12px;
+  padding: 36px 0px 6px 0px;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px 18px 12px;
+}
+.restaurants img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 16px 16px 0 0;
+}
+.restaurants__card--text {
+  background-color: #ffffff;
+  border: transparent solid 0px;
+  border-radius: 0 0 16px 16px;
+}
+.restaurants__card--text > h3 {
+  padding: 10px 0px 0px 10px;
+}
+.restaurants__card--text > p {
+  padding: 0px 0px 10px 10px;
 }
 
 .footer {
-  padding-left: 0px;
-  padding-right: 0px;
+  font-family: Roboto;
+  padding: 18px 0px 18px 18px;
   max-width: 480px;
   background-color: #353535;
 }
 .footer ul {
   padding: 0;
+  list-style: none;
+}
+.footer ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 .footer__logo {
   font-family: "Shrikhand", "cursive";
