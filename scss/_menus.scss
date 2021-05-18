@@ -66,29 +66,34 @@
   &__item {
     background-color: $primary-bg-color;
     border-radius: 16px ;
-    padding: 12px;
     display: flex;
     margin-bottom: 12px;
+    overflow: hidden;
   }
   &__text {
     display:flex;
     flex-direction: column;
     padding-top: 6px;
     padding-right: 12px;
+    padding: 6px 12px 10px 12px;
     flex: 1;
+  }
+  &__text1 {
+    padding-bottom: 6px;
   }
   &__price {
     font-weight: bold;
     color: #757575;
     display: flex;
     align-items: flex-end;
+    padding-bottom: 10px;
   }
   &__tick {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $tertiary-color;
-    width: 10%;
+    width: 15%;
     border-radius: 0px 16px 16px 0px;
   }
   &__icon {
