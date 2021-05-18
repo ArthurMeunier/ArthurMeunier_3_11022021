@@ -1,0 +1,149 @@
+.place {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-bg-color;
+  color:$quaternary-bg-color;
+  font-weight: 600;
+  padding: 12px 0px;
+  .fa-map-marker-alt {
+    margin-right: 5%;
+  }
+}
+
+.explore {
+  background-color: $tertiary-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__p1 {
+    padding: 30px 48px 18px 48px;
+  }
+  &__p2 {
+    font-weight: 300;
+    padding: 0px 20px 30px 20px;
+  }
+  &__btn {
+    margin-bottom: 42px;
+    @include button;
+  }
+}
+
+.tuto {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  > h2 {
+    margin: 28px 0px 18px 12px;
+  }
+  &__steps {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 12px;
+  }
+  &__step {
+    width: 75%;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    padding: 24px;
+    margin-bottom: 18px;
+    border-radius: 25px;
+    background-color: $tertiary-bg-color;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    > .fas {
+      color: $explore-icon-color;
+      &.fa-store {
+        color: $primary-color;
+      }
+    }
+    & i {
+      padding-left: 12px;
+    }
+  }
+  &__number {
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    position: absolute;
+    left: 6%;
+  }
+  &__text {
+    padding-left: 24px;
+  }
+}
+
+.restaurants {
+  background-color: $tertiary-bg-color;
+  padding-bottom: 36px;
+  &__title {
+    margin: 28px 0px 18px 12px;
+    padding: 36px 0px 6px 0px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px 18px 12px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  &__img {
+    display: inline-flex;
+    position: relative;
+    & img {
+      object-fit: cover;
+      height: 150px;
+      width: 100%;
+      border: transparent solid 0px;
+      border-radius: 16px 16px 0 0;
+   }
+  } 
+    &__new {
+      position: absolute;
+      top: 5%;
+      left: 77%;
+      text-align: center;
+      color: #1c987a;
+      font-weight: bold;
+      background-color: $tertiary-color;
+      padding: 2% 3%;
+      border: 0;
+      border-radius: 4px;
+      font-size: 3vw;
+    }
+  &__footer {
+    display: flex;
+    flex: 1;
+    background-color: $primary-bg-color;
+    border: transparent solid 0px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  &__text {
+    flex:1;
+    > h3 {
+      padding: 12px 0px 3px 12px;
+    }
+    > p {
+      padding: 0px 0px 12px 12px;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: x-large;
+  }
+}
+

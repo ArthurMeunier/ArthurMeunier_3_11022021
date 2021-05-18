@@ -9,19 +9,61 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
   margin: 0;
 }
 
-header {
+.header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
 }
-
-h1 {
+.header__title {
   font-family: "Shrikhand", "cursive";
+  font-size: 9vw;
   font-weight: 200;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+
+.footer {
+  font-family: "Roboto", "cursive";
+  font-weight: 100;
+  padding: 18px 0px 18px 18px;
+  max-width: 480px;
+  background-color: #353535;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 12px;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul i {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+}
+.footer ul .fa-handshake {
+  transform: rotate(-45deg);
+}
+.footer ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.footer .footer__link--main {
+  display: flex;
+}
+.footer__logo {
+  font-family: "Shrikhand", "cursive";
+  font-weight: 100;
+  color: white;
 }
 
 .place {
@@ -30,8 +72,7 @@ h1 {
   background-color: #eaeaea;
   color: #353535;
   font-weight: 600;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 12px 0px;
 }
 .place .fa-map-marker-alt {
   margin-right: 5%;
@@ -49,7 +90,7 @@ h1 {
 }
 .explore__p2 {
   font-weight: 300;
-  padding: 0px 20px 24px 20px;
+  padding: 0px 20px 30px 20px;
 }
 .explore__btn {
   margin-bottom: 42px;
@@ -70,11 +111,17 @@ h1 {
 .tuto > h2 {
   margin: 28px 0px 18px 12px;
 }
+.tuto__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 12px;
+}
 .tuto__step {
+  width: 75%;
   margin: 0px 10px 0px 10px;
   display: flex;
-  justify-content: space-around;
-  padding: 24px 0px 24px 0px;
+  padding: 24px;
   margin-bottom: 18px;
   border-radius: 25px;
   background-color: #f6f6f6;
@@ -86,6 +133,9 @@ h1 {
 }
 .tuto__step > .fas.fa-store {
   color: #9356DC;
+}
+.tuto__step i {
+  padding-left: 12px;
 }
 .tuto__number {
   display: flex;
@@ -99,70 +149,178 @@ h1 {
   height: 18px;
   border: 0;
   position: absolute;
-  left: 2px;
+  left: 6%;
+}
+.tuto__text {
+  padding-left: 24px;
 }
 
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 36px;
 }
-.restaurants > h2 {
+.restaurants__title {
   margin: 28px 0px 18px 12px;
   padding: 36px 0px 6px 0px;
 }
-.restaurants__card {
+
+.card {
   display: flex;
   flex-direction: column;
   padding: 0px 12px 18px 12px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
-.restaurants img {
+.card__img {
+  display: inline-flex;
+  position: relative;
+}
+.card__img img {
   object-fit: cover;
   height: 150px;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 16px 16px 0 0;
 }
-.restaurants__card--text {
+.card__new {
+  position: absolute;
+  top: 5%;
+  left: 77%;
+  text-align: center;
+  color: #1c987a;
+  font-weight: bold;
+  background-color: #99E2D0;
+  padding: 2% 3%;
+  border: 0;
+  border-radius: 4px;
+  font-size: 3vw;
+}
+.card__footer {
+  display: flex;
+  flex: 1;
   background-color: #ffffff;
   border: transparent solid 0px;
   border-radius: 0 0 16px 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.restaurants__card--text > h3 {
-  padding: 10px 0px 0px 10px;
+.card__text {
+  flex: 1;
 }
-.restaurants__card--text > p {
-  padding: 0px 0px 10px 10px;
+.card__text > h3 {
+  padding: 12px 0px 3px 12px;
 }
-
-.footer {
-  font-family: Roboto;
-  padding: 18px 0px 18px 18px;
-  max-width: 480px;
-  background-color: #353535;
+.card__text > p {
+  padding: 0px 0px 12px 12px;
 }
-.footer ul {
-  padding: 0;
-  list-style: none;
-}
-.footer ul a {
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
-}
-.footer__logo {
-  font-family: "Shrikhand", "cursive";
-  font-weight: 100;
-  color: white;
-}
-
-header {
+.card__icon {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 25%;
+  font-size: x-large;
 }
 
-img {
-  height: 50px;
-  width: 150px;
+.picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header_menus {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header_menus__title {
+  color: red;
+}
+.header_menus a {
+  position: absolute;
+  color: #353535;
+  left: 5vw;
+  bottom: 5vw;
+  font-size: 5vw;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  height: auto;
+  border-radius: 45px;
+  position: relative;
+  bottom: 14vw;
+  padding-left: 18px;
+}
+.menu__header {
+  font-family: "Shrikhand", "cursive";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 42px 28px 0px;
+}
+.menu__title {
+  font-size: 7vw;
+  font-weight: 100;
+}
+.menu__icon {
+  display: flex;
+  align-items: center;
+  font-size: 7vw;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+}
+.submenu__title {
+  padding-bottom: 4px;
+  font-weight: 300;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+.submenu__border {
+  border: #99E2D0 solid 2px;
+  width: 8.4vw;
+}
+.submenu__items {
+  padding-top: 18px;
+  margin-right: 18px;
+}
+.submenu__item {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  margin-bottom: 12px;
+}
+.submenu__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-right: 12px;
+  flex: 1;
+}
+.submenu__price {
+  font-weight: bold;
+  color: #757575;
+  display: flex;
+  align-items: flex-end;
+}
+.submenu__tick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 10%;
+  border-radius: 0px 16px 16px 0px;
+}
+.submenu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4vw;
 }
 
 /*# sourceMappingURL=style.css.map */
