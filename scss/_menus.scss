@@ -19,12 +19,16 @@
   }
 }
 
+.main--menus {
+  background-color: $tertiary-bg-color;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   background-color: $tertiary-bg-color;
   height: auto;
-  border-radius: 45px;
+  border-radius: 45px 45px 0px 0px;
   position: relative;
   bottom: 14vw;
   padding-left: 18px;
@@ -68,7 +72,11 @@
     border-radius: 16px ;
     display: flex;
     margin-bottom: 12px;
-    overflow: hidden;
+    overflow: hidden !important;
+    cursor: pointer;
+  }
+  &__item:hover &__tick {
+    transform: translateX(64px);
   }
   &__text {
     display:flex;
@@ -77,9 +85,10 @@
     padding-right: 12px;
     padding: 6px 12px 10px 12px;
     flex: 1;
+    text-overflow: ellipsis;
   }
   &__text1 {
-    padding-bottom: 6px;
+    padding-bottom: 6px;  
   }
   &__price {
     font-weight: bold;
@@ -87,6 +96,7 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 10px;
+    padding-right: 10px;
   }
   &__tick {
     display: flex;
@@ -95,6 +105,8 @@
     background-color: $tertiary-color;
     width: 15%;
     border-radius: 0px 16px 16px 0px;
+    position: relative;
+    transition: transform 330ms ease-in-out;
   }
   &__icon {
     display: flex;

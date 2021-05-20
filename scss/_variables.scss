@@ -18,3 +18,13 @@ $explore-icon-color: #7e7e7e;
   padding: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+
+@keyframes slide {
+  from {
+    margin-right: -65px;
+  }
+
+  to {
+    margin-right: 0px;
+  }
+}
