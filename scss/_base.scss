@@ -71,3 +71,14 @@ p, h1, h2, h3, h4 {
     color: white;
   }
 }
+
+.fa-heart:hover {
+  animation: fill 0.45s ease-in-out;
+  opacity: 1;
+  background: radial-gradient($primary-color, $secondary-color);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,9 +1,23 @@
-@keyframes slide {
-  from {
-    margin-right: -65px;
+@keyframes fill {
+  0% {
+    opacity: 0;
   }
-  to {
-    margin-right: 0px;
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 body {
@@ -74,6 +88,17 @@ p, h1, h2, h3, h4 {
   color: white;
 }
 
+.fa-heart:hover {
+  animation: fill 0.45s ease-in-out;
+  opacity: 1;
+  background: radial-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .place {
   display: flex;
   justify-content: center;
@@ -101,6 +126,8 @@ p, h1, h2, h3, h4 {
   padding: 0px 20px 30px 20px;
 }
 .explore__btn {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
   margin-bottom: 42px;
   color: white;
   width: 60%;
@@ -110,6 +137,12 @@ p, h1, h2, h3, h4 {
   font-weight: bold;
   padding: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.explore__btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .tuto {
@@ -229,6 +262,8 @@ p, h1, h2, h3, h4 {
   justify-content: center;
   width: 25%;
   font-size: x-large;
+  border: 0 transparent solid;
+  cursor: pointer;
 }
 
 .picture img {
@@ -271,7 +306,7 @@ p, h1, h2, h3, h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 42px 28px 0px;
+  padding: 30px 42px 14px 0px;
 }
 .menu__title {
   font-size: 7vw;
@@ -289,6 +324,7 @@ p, h1, h2, h3, h4 {
 }
 .submenu__title {
   padding-bottom: 4px;
+  padding-top: 30px;
   font-weight: 300;
   font-size: 4vw;
   text-transform: uppercase;
@@ -301,6 +337,15 @@ p, h1, h2, h3, h4 {
   padding-top: 18px;
   margin-right: 18px;
 }
+.submenu__items .item01 {
+  animation: opacity 1.5s ease-in-out;
+}
+.submenu__items .item02 {
+  animation: opacity 2s ease-in-out;
+}
+.submenu__items .item03 {
+  animation: opacity 2.5s ease-in-out;
+}
 .submenu__item {
   background-color: #ffffff;
   border-radius: 16px;
@@ -310,7 +355,13 @@ p, h1, h2, h3, h4 {
   cursor: pointer;
 }
 .submenu__item:hover .submenu__tick {
-  transform: translateX(64px);
+  transform: translateX(-64px);
+}
+.submenu__item:hover .submenu__price {
+  transform: translateX(-44px);
+}
+.submenu__item:hover .submenu__icon {
+  transform: rotate(360deg);
 }
 .submenu__text {
   display: flex;
@@ -319,10 +370,20 @@ p, h1, h2, h3, h4 {
   padding-right: 12px;
   padding: 6px 12px 10px 12px;
   flex: 1;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .submenu__text1 {
   padding-bottom: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.submenu__text2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .submenu__price {
   font-weight: bold;
@@ -330,7 +391,13 @@ p, h1, h2, h3, h4 {
   display: flex;
   align-items: flex-end;
   padding-bottom: 10px;
-  padding-right: 10px;
+  padding-right: 5%;
+  transition: transform 330ms ease-in-out;
+  position: relative;
+  right: -13%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .submenu__tick {
   display: flex;
@@ -339,8 +406,9 @@ p, h1, h2, h3, h4 {
   background-color: #99E2D0;
   width: 15%;
   border-radius: 0px 16px 16px 0px;
-  position: relative;
   transition: transform 330ms ease-in-out;
+  right: -64px;
+  position: relative;
 }
 .submenu__icon {
   display: flex;
@@ -348,6 +416,35 @@ p, h1, h2, h3, h4 {
   justify-content: center;
   color: white;
   font-size: 4vw;
+  rotate: 0deg;
+  transition: transform 500ms ease-in-out;
+}
+.submenu__icon i {
+  transform: rotate(0 deg);
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 56px;
+}
+.order__btn {
+  transition: all 0.3s ease-in-out;
+  color: white;
+  width: 60%;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 0;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.order__btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

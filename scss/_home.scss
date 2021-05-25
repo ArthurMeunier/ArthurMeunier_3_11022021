@@ -24,9 +24,16 @@
     padding: 0px 20px 30px 20px;
   }
   &__btn {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out ;
     margin-bottom: 42px;
     @include button;
   }
+}
+
+.explore__btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out ;
 }
 
 .tuto {
@@ -145,6 +152,7 @@
     justify-content: center;
     width: 25%;
     font-size: x-large;
+    border: 0 transparent solid;
+    cursor: pointer;
   }
 }
-

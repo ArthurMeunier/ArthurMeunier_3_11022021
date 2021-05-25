@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 30px 42px 28px 0px;
+    padding : 30px 42px 14px 0px;
   }
   &__title {
     font-size: 7vw;
@@ -55,6 +55,7 @@
   flex-direction: column;
   &__title {
     padding-bottom: 4px;
+    padding-top: 30px;
     font-weight: 300;
     font-size: 4vw;
     text-transform: uppercase;
@@ -66,6 +67,15 @@
   &__items {
     padding-top: 18px;
     margin-right: 18px;
+    & .item01 {
+      animation: opacity 1.5s ease-in-out;
+    }
+    & .item02 {
+      animation: opacity 2s ease-in-out;
+    }
+    & .item03 {
+      animation: opacity 2.5s ease-in-out;
+    }
   }
   &__item {
     background-color: $primary-bg-color;
@@ -76,7 +86,13 @@
     cursor: pointer;
   }
   &__item:hover &__tick {
-    transform: translateX(64px);
+    transform: translateX(-64px);
+  }
+  &__item:hover &__price {
+    transform: translateX(-44px);
+  }
+  &__item:hover &__icon {
+    transform: rotate(360deg);
   }
   &__text {
     display:flex;
@@ -85,10 +101,20 @@
     padding-right: 12px;
     padding: 6px 12px 10px 12px;
     flex: 1;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
   }
   &__text1 {
-    padding-bottom: 6px;  
+    padding-bottom: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+  }
+  &__text2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   &__price {
     font-weight: bold;
@@ -96,7 +122,13 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 5%;
+    transition: transform 330ms ease-in-out;
+    position: relative;
+    right: -13%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
   }
   &__tick {
     display: flex;
@@ -105,8 +137,9 @@
     background-color: $tertiary-color;
     width: 15%;
     border-radius: 0px 16px 16px 0px;
-    position: relative;
     transition: transform 330ms ease-in-out;
+    right: -64px;
+    position: relative;
   }
   &__icon {
     display: flex;
@@ -114,5 +147,25 @@
     justify-content: center;
     color: white;
     font-size: 4vw;
+    rotate: 0deg;
+    transition: transform 500ms ease-in-out;
+  }
+  &__icon i {
+    transform: rotate(0 deg);
   }
 }
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 56px;
+  &__btn {
+    transition: all 0.3s ease-in-out ;
+    @include button;
+  }
+}
+.order__btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out ;
+ }
