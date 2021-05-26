@@ -1,6 +1,7 @@
 .picture img {
   width: 100%;
   object-fit: cover;
+  max-height: 16rem;
 }
 
 .header_menus {
@@ -14,8 +15,8 @@
     position: absolute;
     color: $quaternary-bg-color;
     left: 5vw;
-    bottom: 5vw;
-    font-size: 5vw;
+    bottom: 4vw;
+    font-size: 4vw;
   }
 }
 
@@ -30,7 +31,7 @@
   height: auto;
   border-radius: 45px 45px 0px 0px;
   position: relative;
-  bottom: 14vw;
+  bottom: 3rem;
   padding-left: 18px;
   &__header {
     font-family: "Shrikhand", "cursive";
@@ -46,7 +47,7 @@
   &__icon {
     display: flex;
     align-items: center;
-    font-size: 7vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -68,13 +69,16 @@
     padding-top: 18px;
     margin-right: 18px;
     & .item01 {
-      animation: opacity 1.5s ease-in-out;
+      animation: opacity 1.5s ease-in-out, moveY 0.5s ease-in-out 0.2s;
     }
     & .item02 {
-      animation: opacity 2s ease-in-out;
+      animation: opacity 2s ease-in-out, moveY 1s ease-in-out 0.2s ;
     }
     & .item03 {
-      animation: opacity 2.5s ease-in-out;
+      animation: opacity 2.5s ease-in-out, moveY 1.5s ease-in-out 0.2s;
+    }
+    & .item04 {
+      animation: opacity 3s ease-in-out, moveY 2s ease-in-out 0.2s;
     }
   }
   &__item {
@@ -146,8 +150,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 4vw;
-    rotate: 0deg;
+    font-size: 1rem;
     transition: transform 500ms ease-in-out;
   }
   &__icon i {
@@ -161,11 +164,10 @@
   align-items: center;
   padding-bottom: 56px;
   &__btn {
-    transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out;
     @include button;
   }
 }
 .order__btn:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease-in-out ;
+  box-shadow: grey 2px 2px 16px;
  }

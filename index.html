@@ -6,6 +6,10 @@
 	<title>ohmyfood</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (min-width:1px) and (max-width: 480px)" href="css/style.css"/>
+  <link rel="stylesheet" media="screen and (min-width:481px) and (max-width: 768px)" href="css/tabletP.css"/>
+  <link rel="stylesheet" media="screen and (min-width:769px) and (max-width: 1024px)" href="css/tabletL.css"/>
+  <link rel="stylesheet" media="screen and (min-width:1025px)" href="css/desktop.css"/>
   <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');</style>
   <link rel="icon" type="image/svg" href="img/logo_ohmyfood.svg">
   <script src="https://kit.fontawesome.com/635b13c360.js" crossorigin="anonymous"></script>
@@ -56,6 +60,7 @@
     <div class="restaurants">
       <h2 class="restaurants__title">Restaurants</h2>
 
+      <div class="cards">
       <a class="card" href="la-palette-du-gout.html">
         <div class="card__img">
           <img src="img/restaurants/restaurant_01.jpg" alt="restaurant_menilmontant">
@@ -116,7 +121,8 @@
             <i class="far fa-heart"></i>
           </div>
         </div> 
-      </a>          
+      </a>
+    </div>          
 
     </div>
   </main>

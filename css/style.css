@@ -20,6 +20,17 @@
     opacity: 1;
   }
 }
+@keyframes moveY {
+  0% {
+    margin-top: 25px;
+  }
+  50% {
+    margin-top: 12px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 body {
   padding-left: 0px;
   padding-right: 0px;
@@ -36,13 +47,12 @@ p, h1, h2, h3, h4 {
 }
 
 .header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
 }
 .header__title {
   font-family: "Shrikhand", "cursive";
-  font-size: 9vw;
+  font-size: 7vw;
   font-weight: 200;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -106,6 +116,7 @@ p, h1, h2, h3, h4 {
   color: #353535;
   font-weight: 600;
   padding: 12px 0px;
+  box-shadow: grey 0px 1px 2px 1px;
 }
 .place .fa-map-marker-alt {
   margin-right: 5%;
@@ -136,7 +147,7 @@ p, h1, h2, h3, h4 {
   border-radius: 100px;
   font-weight: bold;
   padding: 18px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: grey 2px 2px 6px;
   cursor: pointer;
 }
 
@@ -170,6 +181,7 @@ p, h1, h2, h3, h4 {
   font-weight: 500;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+  cursor: pointer;
 }
 .tuto__step > .fas {
   color: #7e7e7e;
@@ -237,7 +249,7 @@ p, h1, h2, h3, h4 {
   padding: 2% 3%;
   border: 0;
   border-radius: 4px;
-  font-size: 3vw;
+  font-size: 0.8em;
 }
 .card__footer {
   display: flex;
@@ -269,6 +281,7 @@ p, h1, h2, h3, h4 {
 .picture img {
   width: 100%;
   object-fit: cover;
+  max-height: 16rem;
 }
 
 .header_menus {
@@ -283,8 +296,8 @@ p, h1, h2, h3, h4 {
   position: absolute;
   color: #353535;
   left: 5vw;
-  bottom: 5vw;
-  font-size: 5vw;
+  bottom: 4vw;
+  font-size: 4vw;
 }
 
 .main--menus {
@@ -298,7 +311,7 @@ p, h1, h2, h3, h4 {
   height: auto;
   border-radius: 45px 45px 0px 0px;
   position: relative;
-  bottom: 14vw;
+  bottom: 3rem;
   padding-left: 18px;
 }
 .menu__header {
@@ -315,7 +328,7 @@ p, h1, h2, h3, h4 {
 .menu__icon {
   display: flex;
   align-items: center;
-  font-size: 7vw;
+  font-size: 1.5rem;
 }
 
 .submenu {
@@ -338,13 +351,16 @@ p, h1, h2, h3, h4 {
   margin-right: 18px;
 }
 .submenu__items .item01 {
-  animation: opacity 1.5s ease-in-out;
+  animation: opacity 1.5s ease-in-out, moveY 0.5s ease-in-out 0.2s;
 }
 .submenu__items .item02 {
-  animation: opacity 2s ease-in-out;
+  animation: opacity 2s ease-in-out, moveY 1s ease-in-out 0.2s;
 }
 .submenu__items .item03 {
-  animation: opacity 2.5s ease-in-out;
+  animation: opacity 2.5s ease-in-out, moveY 1.5s ease-in-out 0.2s;
+}
+.submenu__items .item04 {
+  animation: opacity 3s ease-in-out, moveY 2s ease-in-out 0.2s;
 }
 .submenu__item {
   background-color: #ffffff;
@@ -415,8 +431,7 @@ p, h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 4vw;
-  rotate: 0deg;
+  font-size: 1rem;
   transition: transform 500ms ease-in-out;
 }
 .submenu__icon i {
@@ -438,13 +453,12 @@ p, h1, h2, h3, h4 {
   border-radius: 100px;
   font-weight: bold;
   padding: 18px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: grey 2px 2px 6px;
   cursor: pointer;
 }
 
 .order__btn:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  box-shadow: grey 2px 2px 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

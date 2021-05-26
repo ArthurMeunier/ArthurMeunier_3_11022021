@@ -1,0 +1,63 @@
+/* ### DESKTOP PORTRAIT CSS | WIDTH: 1025PX+*/
+/* ### MAIN ### */
+
+
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.footer {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header__title {
+  font-size: 4em;
+}
+
+.header_menus a {
+  font-size: 2rem;
+  bottom: 2.3vw;
+}
+
+.place {
+  box-shadow: none;
+}
+
+.place .fa-map-marker-alt {
+  margin-right: 1%;
+}
+
+.explore__btn {
+  width: 33%;
+}
+
+.tuto__steps {
+  flex-direction: row;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.menu__title {
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+
+.submenus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.submenu__title {
+  font-size: 1.5rem;
+}
+
+.submenu__tick {
+  right: -68px;
+}
