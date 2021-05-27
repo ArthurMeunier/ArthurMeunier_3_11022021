@@ -1,3 +1,5 @@
+/* ### HEADER ### */
+
 .picture img {
   width: 100%;
   object-fit: cover;
@@ -19,6 +21,7 @@
     font-size: 4vw;
   }
 }
+/* ### MENU ### */
 
 .main--menus {
   background-color: $tertiary-bg-color;
@@ -50,6 +53,8 @@
     font-size: 1.5rem;
   }
 }
+
+/* ### SUBMENU ### */
 
 .submenu {
   display: flex;
@@ -159,6 +164,8 @@
     transform: rotate(0 deg);
   }
 }
+
+/* ### ORDER ### */
 
 .order {
   display: flex;
