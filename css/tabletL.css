@@ -10,11 +10,16 @@ body {
 }
 
 .explore__btn {
-  width: 33%;
+  width: 15rem;
 }
 
 .tuto__steps {
   flex-direction: row;
+}
+
+.tuto__step {
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .cards {

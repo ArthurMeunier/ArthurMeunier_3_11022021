@@ -60,6 +60,12 @@ $explore-icon-color: #7e7e7e;
   0% {
     transform: rotate(0deg);
   }
+  90% {
+    transform: rotate(375deg);
+  }
+  95% {
+    transform: rotate(345deg);
+  }
   100% {
     transform: rotate(360deg);
   }
@@ -83,7 +89,7 @@ $explore-icon-color: #7e7e7e;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loaderstop 1s linear 3.5s forwards;
+  animation: loaderstop 1s linear 2.25s forwards;
 }
 .loader {
   display: flex;
@@ -95,6 +101,6 @@ $explore-icon-color: #7e7e7e;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: loaderanim 1.5s linear 0s 2;
+  animation: loaderanim 2s linear 0s 1;
   font-family: "Shrikhand", "cursive";
 }

@@ -4,13 +4,16 @@
 
 
 body {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: auto;
 }
 
+
+
 .footer {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: auto;
+  padding-left: 3%;
 }
 
 .header__title {
@@ -31,18 +34,34 @@ body {
 }
 
 .explore__btn {
-  width: 33%;
+  width: 15rem;
+}
+.tuto__title {
+  padding-left: 3%;
 }
 
 .tuto__steps {
   flex-direction: row;
 }
 
+.tuto__number {
+  font-size: 13px;
+}
+
+.restaurants__title {
+  padding-left: 3%;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
+.card {
+  width: 90%;
+  padding-bottom: 3%; 
+}
 
 .menu__title {
   font-size: 3rem;
@@ -58,6 +77,17 @@ body {
   font-size: 1.5rem;
 }
 
+.submen__price {
+  right: -4%;
+}
 .submenu__tick {
-  right: -70px;
+  right: -100px;
+}
+
+.submenu__item:hover .submenu__tick {
+  transform: translateX(-100px);
+}
+
+.submenu__item:hover .submenu__price {
+  transform: translateX(-55px);
 }

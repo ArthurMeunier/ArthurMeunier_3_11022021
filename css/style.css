@@ -35,6 +35,12 @@
   0% {
     transform: rotate(0deg);
   }
+  90% {
+    transform: rotate(375deg);
+  }
+  95% {
+    transform: rotate(345deg);
+  }
   100% {
     transform: rotate(360deg);
   }
@@ -55,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loaderstop 1s linear 3.5s forwards;
+  animation: loaderstop 1s linear 2.25s forwards;
 }
 
 .loader {
@@ -68,7 +74,7 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: loaderanim 1.5s linear 0s 2;
+  animation: loaderanim 2s linear 0s 1;
   font-family: "Shrikhand", "cursive";
 }
 
@@ -202,7 +208,7 @@ p, h1, h2, h3, h4 {
   flex-direction: column;
   margin-bottom: 24px;
 }
-.tuto > h2 {
+.tuto__title {
   margin: 28px 0px 18px 12px;
 }
 .tuto__steps {
@@ -436,11 +442,13 @@ p, h1, h2, h3, h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 0.85rem;
 }
 .submenu__text2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 0.74rem;
 }
 .submenu__price {
   font-weight: bold;
