@@ -24,7 +24,7 @@ remplir progressivement. Pour cette première version, l’effet peut être appa
     - Secondaire : #FF79DA
     - Tertiaire : #99E2D0
 
-- Les couleurs sont :
+- Les polices sont :
     - Logo et titres: Shrikhand
     - Texte: Roboto
 
