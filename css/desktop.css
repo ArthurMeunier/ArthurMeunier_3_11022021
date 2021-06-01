@@ -91,3 +91,7 @@ body {
 .submenu__item:hover .submenu__price {
   transform: translateX(-55px);
 }
+
+.order__btn {
+  width: 33%;
+}

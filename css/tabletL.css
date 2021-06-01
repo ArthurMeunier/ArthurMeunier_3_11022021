@@ -22,6 +22,14 @@ body {
   white-space: nowrap;
 }
 
+.tuto__text {
+  padding-left: 10px;
+}
+
+.tuto__step i {
+  padding-left: 0;
+}  
+
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -54,4 +62,8 @@ body {
 
 .submenu__item:hover .submenu__price {
   transform: translateX(-125%);
+}
+
+.order__btn {
+  width: 33%;
 }
